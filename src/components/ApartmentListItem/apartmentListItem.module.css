@@ -1,0 +1,24 @@
+.item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.wrapper {
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+p {
+    color: #000;
+    font-weight: 700;
+}
+
+.img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
