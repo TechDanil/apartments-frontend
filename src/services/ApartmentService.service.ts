@@ -1,4 +1,4 @@
-import { API_URL } from "constants/constants";
+import { API_URL, PAGE_VALUE, LIMIT_INCREASE } from "constants/constants";
 
 import queryString from "query-string";
 
@@ -21,8 +21,8 @@ const ApartmentService = (): IApartmentService => {
   const { isLoading, request, error, process, setProcess } = useHttp();
 
   const getAllApartments = async (
-    page: number = 1,
-    limit: number = 8,
+    page: number = PAGE_VALUE,
+    limit: number = LIMIT_INCREASE,
     filter: string = "all", 
     sort: string = "all",
   ): Promise<IApartment[]> => {
